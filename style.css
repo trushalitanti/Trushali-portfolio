@@ -1,0 +1,62 @@
+#projects{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 1rem;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+}
+#projects > .project{
+    background-color: lightseagreen;
+}
+#projects > .project:nth-child(2){
+    /* grid-row: span 2; */
+      /* grid-column: span 2;   */
+      grid-area: span 2 / span 2;
+}
+body{
+    font-size: 12px;
+    display: grid;
+    grid-template: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+#blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#blogs > .blog{
+height: 400px;
+width: 300px;
+display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
+
+}
+
+#blogs > .blog > div{
+    flex: 1;
+    overflow: hidden;
+}
+#blogs > .blog > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+#blogs > .blog img{
+    height: 100%;
+    width: 100%;
+}
+
