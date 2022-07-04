@@ -1,4 +1,4 @@
-#projects{
+/* #projects{
     display: grid;
     grid-template-rows: 100px 100px;
     grid-template-columns: 100px 100px 100px;
@@ -8,14 +8,14 @@
     /* align-items: center; */
     /* justify-items: center; */
 }
-#projects > .project{
+/* #projects > .project{
     background-color: lightseagreen;
-}
-#projects > .project:nth-child(2){
+} */
+/* #projects > .project:nth-child(2){
     /* grid-row: span 2; */
       /* grid-column: span 2;   */
-      grid-area: span 2 / span 2;
-}
+      /* grid-area: span 2 / span 2; */
+} 
 body{
     font-size: 12px;
     display: grid;
@@ -23,7 +23,7 @@ body{
     "header header"
     "aside main"
     "footer footer";
-}
+} 
 
 #blogs{
     display: flex;
@@ -50,7 +50,7 @@ flex-direction: column;
     justify-content: space-around;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
 }
@@ -58,5 +58,28 @@ p, h1, h2, h3, h4, h5, h6{
 #blogs > .blog img{
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
+#row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+#row > .rows{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.btn{
+    padding: 10px 5px;
+    border-radius: 17px ;
+    background-color: aqua;
+    border: solid 0.7px;
+}
